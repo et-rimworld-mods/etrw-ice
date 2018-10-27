@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="ResourceBase">
+        <defName>IcePellets</defName>
+        <label>ice pellets</label>
+        <description>Small ice pellets that can be further processed into blocks.</description>
+
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <texPath>Things/Item/Resource/Leather</texPath>
+            <color>(60, 120, 60)</color>
+        </graphicData>
+        <uiIconForStackCount>1</uiIconForStackCount>
+
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MaxHitPoints>5</MaxHitPoints>
+            <DeteriorationRate>1</DeteriorationRate>
+            <Flammability>0.0</Flammability>
+            <MarketValue>0</MarketValue>
+            <Mass>0.0009</Mass>
+        </statBases>
+        <tradeability>None</tradeability>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <tickerType>Rare</tickerType>
+        <socialPropernessMatters>false</socialPropernessMatters>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>IceBlocks</defName>
+        <label>ice blocks</label>
+        <description>Made from pure ice, these blocks are easily damaged.</description>
+
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <texPath>Things/Item/Resource/StoneBlocks</texPath>
+            <color>(160, 200, 220)</color>
+        </graphicData>
+        <uiIconForStackCount>1</uiIconForStackCount>
+
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <DeteriorationRate>1</DeteriorationRate>
+            <Flammability>0.0</Flammability>
+            <MarketValue>0.1</MarketValue>
+            <Mass>0.5</Mass>
+        </statBases>
+        <tradeability>Buyable</tradeability>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <tickerType>Rare</tickerType>
+        <socialPropernessMatters>false</socialPropernessMatters>
+    </ThingDef>
+
+    <ThingDef Name="IcecreteBlocksBase" ParentName="ResourceBase" Abstract="True">
+        <description>Made from ice mixed with organic fibres, these blocks are a more sturdy building material.</description>
+
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <texPath>Things/Item/Resource/StoneBlocks</texPath>
+        </graphicData>
+        <uiIconForStackCount>1</uiIconForStackCount>
+
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <DeteriorationRate>1</DeteriorationRate>
+            <Flammability>0.0</Flammability>
+            <MarketValue>0.5</MarketValue>
+            <Mass>0.5</Mass>
+        </statBases>
+        <tradeability>Sellable</tradeability>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <tickerType>Rare</tickerType>
+        <socialPropernessMatters>false</socialPropernessMatters>
+    </ThingDef>
+
+    <ThingDef ParentName="IcecreteBlocks">
+        <defName>IcecreteBlocksWood</defName>
+        <label>icecrete (wood pulp) blocks</label>
+
+        <graphicData>
+            <color>(175, 155, 135)</color>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="IcecreteBlocks">
+        <defName>IcecreteBlocksWood</defName>
+        <label>icecrete (haygrass) blocks</label>
+
+        <graphicData>
+            <color>(130, 230, 170)</color>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="IcecreteBlocks">
+        <defName>IcecreteBlocksWood</defName>
+        <label>icecrete (cotton) blocks</label>
+
+        <graphicData>
+            <color>(60, 100, 120)</color>
+        </graphicData>
+    </ThingDef>
+</Defs>
