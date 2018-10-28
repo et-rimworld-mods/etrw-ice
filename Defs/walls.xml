@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Name="IceWallBase" ParentName="BuildingBase" Abstract="True">
+        <graphicData>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <drawDamagedOverlay>false</drawDamagedOverlay>
+
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>1</fillPercent>
+        <coversFloor>true</coversFloor>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <tickerType>Never</tickerType>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <holdsRoof>true</holdsRoof>
+        <designationCategory>Structure</designationCategory>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>true</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <building>
+            <repairable>false</repairable>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+        </building>
+        <costStuffCount>5</costStuffCount>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <comps>
+            <li>
+                <compClass>CompMelter</compClass>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="IceWallBase">
+        <defName>IceWall</defName>
+        <label>ice wall</label>
+        <description>A wall made of ice blocks. It is not very durable; Bombs shatter it easily.</description>
+
+        <graphicData>
+            <graphicClass>Graphic_Appearances</graphicClass>
+            <texPath>Things/Building/Linked/Wall</texPath>
+        </graphicData>
+        <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+        <designatorDropdown>SoftConcreteSandWall</designatorDropdown>
+
+        <stuffCategories>
+            <li>IceBlocky</li>
+        </stuffCategories>
+        <statBases>
+            <Beauty>1</Beauty>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>250</WorkToBuild>
+            <Flammability>0.0</Flammability>
+        </statBases>
+        <researchPrerequisites>
+            <li>IceBlockWallResearch</li>
+        </researchPrerequisites>
+        <damageMultipliers>
+            <li>
+                <damageDef>Bomb</damageDef>
+                <multiplier>6</multiplier>
+            </li>
+        </damageMultipliers>
+    </ThingDef>
+
+    <ThingDef ParentName="IceWallBase">
+        <defName>IcecreteWall</defName>
+        <label>icecrete wall</label>
+        <description>A wall made of icecrete blocks. It is more durable than pure ice, but a bit ugly.</description>
+
+        <graphicData>
+            <graphicClass>Graphic_Appearances</graphicClass>
+            <texPath>Things/Building/Linked/Wall</texPath>
+        </graphicData>
+        <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+        <designatorDropdown>SoftConcreteSandWall</designatorDropdown>
+
+        <stuffCategories>
+            <li>IcecreteBlocky</li>
+        </stuffCategories>
+        <statBases>
+            <Beauty>-1</Beauty>
+            <MaxHitPoints>400</MaxHitPoints>
+            <WorkToBuild>250</WorkToBuild>
+            <Flammability>0.0</Flammability>
+        </statBases>
+        <researchPrerequisites>
+            <li>IceBlockWallResearch</li>
+            <li>IcecreteResearch</li>
+        </researchPrerequisites>
+        <damageMultipliers>
+            <li>
+                <damageDef>Bomb</damageDef>
+                <multiplier>2</multiplier>
+            </li>
+        </damageMultipliers>
+    </ThingDef>
+</Defs>

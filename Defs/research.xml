@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ResearchTabDef>
+        <defName>Ice</defName>
+        <label>Ice</label>
+    </ResearchTabDef>
+
+    <ResearchProjectDef>
+        <defName>IceResearch</defName>
+        <label>icecrete</label>
+        <description>Figure out how to form ice into effective blocks, and cement them into useful forms.</description>
+        <researchViewX>0</researchViewX>
+        <researchViewY>0</researchViewY>
+
+        <baseCost>400</baseCost>
+        <prerequisites>
+            <li>AirConditioning</li>
+        </prerequisites>
+        <techLevel>Industrial</techLevel>
+        <tab>Ice</tab>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>IceBlockWallResearch</defName>
+        <label>ice block wall</label>
+        <description>Pour concrete sand into a rough wall.</description>
+        <researchViewX>1</researchViewX>
+        <researchViewY>0</researchViewY>
+
+        <baseCost>500</baseCost>
+        <prerequisites>
+            <li>IceResearch</li>
+        </prerequisites>
+        <techLevel>Industrial</techLevel>
+        <tab>Ice</tab>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>IceSculptureResearch</defName>
+        <label>ice sculptures</label>
+        <description>Effective use of ice blocks to form aesthetically-pleasing art forms.</description>
+        <researchViewX>1</researchViewX>
+        <researchViewY>1</researchViewY>
+
+        <baseCost>500</baseCost>
+        <prerequisites>
+            <li>IceResearch</li>
+        </prerequisites>
+        <techLevel>Industrial</techLevel>
+        <tab>Ice</tab>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>IcecreteResearch</defName>
+        <label>icecrete</label>
+        <description>A form of concrete made from ice and organic fibres, it is more durable than pure ice.</description>
+        <researchViewX>1</researchViewX>
+        <researchViewY>2</researchViewY>
+
+        <baseCost>1000</baseCost>
+        <prerequisites>
+            <li>IceResearch</li>
+        </prerequisites>
+        <techLevel>Industrial</techLevel>
+        <tab>Ice</tab>
+    </ResearchProjectDef>
+</Defs>

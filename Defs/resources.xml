@@ -7,10 +7,10 @@
 
         <graphicData>
             <graphicClass>Graphic_StackCount</graphicClass>
-            <texPath>Things/Item/Resource/Leather</texPath>
-            <color>(60, 120, 60)</color>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+            <color>(160, 200, 220)</color>
         </graphicData>
-        <uiIconForStackCount>1</uiIconForStackCount>
+        <uiIconForStackCount>75</uiIconForStackCount>
 
         <useHitPoints>true</useHitPoints>
         <statBases>
@@ -26,7 +26,18 @@
         </thingCategories>
         <tickerType>Rare</tickerType>
         <socialPropernessMatters>false</socialPropernessMatters>
+        <comps>
+            <li>
+                <compClass>CompMelter</compClass>
+            </li>
+        </comps>
     </ThingDef>
+
+
+    <StuffCategoryDef>
+        <defName>IceBlocky</defName>
+        <label>ice blocks</label>
+    </StuffCategoryDef>
 
     <ThingDef ParentName="ResourceBase">
         <defName>IceBlocks</defName>
@@ -38,7 +49,13 @@
             <texPath>Things/Item/Resource/StoneBlocks</texPath>
             <color>(160, 200, 220)</color>
         </graphicData>
-        <uiIconForStackCount>1</uiIconForStackCount>
+        <uiIconForStackCount>75</uiIconForStackCount>
+        <stuffProps>
+            <categories>
+                <li>IceBlocky</li>
+            </categories>
+            <appearance>Bricks</appearance>
+        </stuffProps>
 
         <useHitPoints>true</useHitPoints>
         <statBases>
@@ -54,7 +71,18 @@
         </thingCategories>
         <tickerType>Rare</tickerType>
         <socialPropernessMatters>false</socialPropernessMatters>
+        <comps>
+            <li>
+                <compClass>CompMelter</compClass>
+            </li>
+        </comps>
     </ThingDef>
+
+
+    <StuffCategoryDef>
+        <defName>IcecreteBlocky</defName>
+        <label>icecrete blocks</label>
+    </StuffCategoryDef>
 
     <ThingDef Name="IcecreteBlocksBase" ParentName="ResourceBase" Abstract="True">
         <description>Made from ice mixed with organic fibres, these blocks are a more sturdy building material.</description>
@@ -64,6 +92,12 @@
             <texPath>Things/Item/Resource/StoneBlocks</texPath>
         </graphicData>
         <uiIconForStackCount>1</uiIconForStackCount>
+        <stuffProps>
+            <categories>
+                <li>IcecreteBlocky</li>
+            </categories>
+            <appearance>Bricks</appearance>
+        </stuffProps>
 
         <useHitPoints>true</useHitPoints>
         <statBases>
@@ -79,9 +113,14 @@
         </thingCategories>
         <tickerType>Rare</tickerType>
         <socialPropernessMatters>false</socialPropernessMatters>
+        <comps>
+            <li>
+                <compClass>CompMelter</compClass>
+            </li>
+        </comps>
     </ThingDef>
 
-    <ThingDef ParentName="IcecreteBlocks">
+    <ThingDef ParentName="IcecreteBlocksBase">
         <defName>IcecreteBlocksWood</defName>
         <label>icecrete (wood pulp) blocks</label>
 
@@ -90,7 +129,7 @@
         </graphicData>
     </ThingDef>
 
-    <ThingDef ParentName="IcecreteBlocks">
+    <ThingDef ParentName="IcecreteBlocksBase">
         <defName>IcecreteBlocksWood</defName>
         <label>icecrete (haygrass) blocks</label>
 
@@ -99,7 +138,7 @@
         </graphicData>
     </ThingDef>
 
-    <ThingDef ParentName="IcecreteBlocks">
+    <ThingDef ParentName="IcecreteBlocksBase">
         <defName>IcecreteBlocksWood</defName>
         <label>icecrete (cotton) blocks</label>
 

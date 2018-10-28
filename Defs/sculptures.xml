@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Name="IceSculptureBase" ParentName="BuildingBase" Abstract="True">
+        <thingClass>Building_Art</thingClass>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>70</pathCost>
+        <castEdgeShadows>true</castEdgeShadows>
+        <useHitPoints>true</useHitPoints>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsArt</li>
+        </thingCategories>
+        <statBases>
+            <Flammability>0.0</Flammability>
+            <SellPriceFactor>1.0</SellPriceFactor>
+        </statBases>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Art">
+                <nameMaker>NamerArtSculpture</nameMaker>
+                <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+                <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+            </li>
+            <li>
+                <compClass>CompMelter</compClass>
+            </li>
+        </comps>
+        <inspectorTabs>
+            <li>ITab_Art</li>
+        </inspectorTabs>
+        <recipeMaker>
+            <workSpeedStat>SculptingSpeed</workSpeedStat>
+            <workSkill>Artistic</workSkill>
+            <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+            <effectWorking>Sculpt</effectWorking>
+            <soundWorking>Recipe_Sculpt</soundWorking>
+            <recipeUsers>
+                <li>TableSculpting</li>
+            </recipeUsers>
+            <!--<fixedIngredientFilter>-->
+                <!--<thingDefs>-->
+                    <!--<li>IceBlocks</li>-->
+                <!--</thingDefs>-->
+            <!--</fixedIngredientFilter>-->
+            <!--<defaultIngredientFilter>-->
+                <!--<thingDefs>-->
+                    <!--<li>IceBlocks</li>-->
+                <!--</thingDefs>-->
+            <!--</defaultIngredientFilter>-->
+        </recipeMaker>
+        <researchPrerequisites>
+            <li>IceSculptureResearch</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="IceSculptureBase">
+        <defName>IceSculptureLarge</defName>
+        <label>large ice sculpture</label>
+        <description>A person-sized piece of ice sculpted into an artistic form.</description>
+
+        <graphicData>
+            <graphicClass>Graphic_Random</graphicClass>
+            <texPath>Things/Building/Art/SculptureLarge</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+
+        <fillPercent>0.5</fillPercent>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Mass>50</Mass>
+            <Beauty>100</Beauty>
+            <WorkToMake>30000</WorkToMake>
+        </statBases>
+        <stuffCategories>
+            <li>IceBlocky</li>
+        </stuffCategories>
+        <costStuffCount>100</costStuffCount>
+    </ThingDef>
+
+    <ThingDef ParentName="IceSculptureBase">
+        <defName>IceSculptureGrand</defName>
+        <label>grand ice sculpture</label>
+        <description>A huge ice sculpture sized to dominate a room.</description>
+
+        <graphicData>
+            <graphicClass>Graphic_Random</graphicClass>
+            <texPath>Things/Building/Art/SculptureGrand</texPath>
+            <drawSize>(4,4)</drawSize>
+        </graphicData>
+
+        <fillPercent>0.5</fillPercent>
+        <rotatable>false</rotatable>
+        <size>(2,2)</size>
+        <canOverlapZones>false</canOverlapZones>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>240</Beauty>
+            <Mass>100</Mass>
+            <WorkToMake>65000</WorkToMake>
+        </statBases>
+        <stuffCategories>
+            <li>IceBlocky</li>
+        </stuffCategories>
+        <costStuffCount>220</costStuffCount>
+    </ThingDef>
+</Defs>
