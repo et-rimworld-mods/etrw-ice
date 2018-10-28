@@ -27,7 +27,7 @@
         <researchViewX>1</researchViewX>
         <researchViewY>0</researchViewY>
 
-        <baseCost>500</baseCost>
+        <baseCost>600</baseCost>
         <prerequisites>
             <li>IceResearch</li>
         </prerequisites>
@@ -42,7 +42,7 @@
         <researchViewX>1</researchViewX>
         <researchViewY>1</researchViewY>
 
-        <baseCost>500</baseCost>
+        <baseCost>600</baseCost>
         <prerequisites>
             <li>IceResearch</li>
         </prerequisites>
@@ -57,7 +57,7 @@
         <researchViewX>1</researchViewX>
         <researchViewY>2</researchViewY>
 
-        <baseCost>1000</baseCost>
+        <baseCost>800</baseCost>
         <prerequisites>
             <li>IceResearch</li>
         </prerequisites>
