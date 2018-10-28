@@ -289,7 +289,7 @@
             <statFactors>
                 <MarketValue>1.1</MarketValue>
                 <Flammability>0.1</Flammability>
-                <Beauty>0.3</Beauty>
+                <Beauty>0.4</Beauty>
                 <MaxHitPoints>2.0</MaxHitPoints>
                 <WorkToBuild>2.0</WorkToBuild>
                 <WorkToMake>2.0</WorkToMake>
@@ -347,7 +347,7 @@
             <statFactors>
                 <MarketValue>1.2</MarketValue>
                 <Flammability>0.15</Flammability>
-                <Beauty>0.8</Beauty>
+                <Beauty>0.6</Beauty>
                 <MaxHitPoints>1.5</MaxHitPoints>
                 <WorkToBuild>1.5</WorkToBuild>
                 <WorkToMake>1.5</WorkToMake>
