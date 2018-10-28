@@ -7,7 +7,7 @@
 
     <ResearchProjectDef>
         <defName>IceResearch</defName>
-        <label>icecrete</label>
+        <label>ice</label>
         <description>Figure out how to form ice into effective blocks, and cement them into useful forms.</description>
         <researchViewX>0</researchViewX>
         <researchViewY>0</researchViewY>
@@ -23,7 +23,7 @@
     <ResearchProjectDef>
         <defName>IceBlockWallResearch</defName>
         <label>ice block wall</label>
-        <description>Pour concrete sand into a rough wall.</description>
+        <description>Cement ice blocks into a wall.</description>
         <researchViewX>1</researchViewX>
         <researchViewY>0</researchViewY>
 

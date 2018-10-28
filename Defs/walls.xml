@@ -2,6 +2,8 @@
 <Defs>
     <ThingDef Name="IceWallBase" ParentName="BuildingBase" Abstract="True">
         <graphicData>
+            <graphicClass>Graphic_Appearances</graphicClass>
+            <texPath>Things/Building/Linked/Wall</texPath>
             <linkType>CornerFiller</linkType>
             <linkFlags>
                 <li>Wall</li>
@@ -18,6 +20,7 @@
                 <edgeRight>Damage/Edge</edgeRight>
             </damageData>
         </graphicData>
+        <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
         <drawDamagedOverlay>false</drawDamagedOverlay>
 
         <thingClass>Building</thingClass>
@@ -46,6 +49,9 @@
                 <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
             </blueprintGraphicData>
         </building>
+        <stuffCategories>
+            <li>IceBlocky</li>
+        </stuffCategories>
         <costStuffCount>5</costStuffCount>
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
         <comps>
@@ -58,64 +64,44 @@
     <ThingDef ParentName="IceWallBase">
         <defName>IceWall</defName>
         <label>ice wall</label>
-        <description>A wall made of ice blocks. It is not very durable; Bombs shatter it easily.</description>
+        <description>A wall made of ice blocks.</description>
 
-        <graphicData>
-            <graphicClass>Graphic_Appearances</graphicClass>
-            <texPath>Things/Building/Linked/Wall</texPath>
-        </graphicData>
-        <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
-        <designatorDropdown>SoftConcreteSandWall</designatorDropdown>
-
-        <stuffCategories>
-            <li>IceBlocky</li>
-        </stuffCategories>
         <statBases>
             <Beauty>1</Beauty>
             <MaxHitPoints>100</MaxHitPoints>
             <WorkToBuild>250</WorkToBuild>
-            <Flammability>0.0</Flammability>
+            <Flammability>1.0</Flammability>
         </statBases>
         <researchPrerequisites>
             <li>IceBlockWallResearch</li>
-        </researchPrerequisites>
-        <damageMultipliers>
-            <li>
-                <damageDef>Bomb</damageDef>
-                <multiplier>6</multiplier>
-            </li>
-        </damageMultipliers>
-    </ThingDef>
-
-    <ThingDef ParentName="IceWallBase">
-        <defName>IcecreteWall</defName>
-        <label>icecrete wall</label>
-        <description>A wall made of icecrete blocks. It is more durable than pure ice, but a bit ugly.</description>
-
-        <graphicData>
-            <graphicClass>Graphic_Appearances</graphicClass>
-            <texPath>Things/Building/Linked/Wall</texPath>
-        </graphicData>
-        <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
-        <designatorDropdown>SoftConcreteSandWall</designatorDropdown>
-
-        <stuffCategories>
-            <li>IcecreteBlocky</li>
-        </stuffCategories>
-        <statBases>
-            <Beauty>-1</Beauty>
-            <MaxHitPoints>400</MaxHitPoints>
-            <WorkToBuild>250</WorkToBuild>
-            <Flammability>0.0</Flammability>
-        </statBases>
-        <researchPrerequisites>
-            <li>IceBlockWallResearch</li>
-            <li>IcecreteResearch</li>
         </researchPrerequisites>
         <damageMultipliers>
             <li>
                 <damageDef>Bomb</damageDef>
                 <multiplier>2</multiplier>
+            </li>
+        </damageMultipliers>
+    </ThingDef>
+
+    <ThingDef ParentName="IceWallBase">
+        <defName>ChiseledIceWall</defName>
+        <label>chiseled ice wall</label>
+        <description>A wall made of ice blocks, chiseled to look like natural ice crystals. The chiseling makes it less durable in general, and more susceptible to explosives.</description>
+
+        <statBases>
+            <Beauty>15</Beauty>
+            <MaxHitPoints>70</MaxHitPoints>
+            <WorkToBuild>500</WorkToBuild>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <researchPrerequisites>
+            <li>IceSculptureResearch</li>
+            <li>IceBlockWallResearch</li>
+        </researchPrerequisites>
+        <damageMultipliers>
+            <li>
+                <damageDef>Bomb</damageDef>
+                <multiplier>3</multiplier>
             </li>
         </damageMultipliers>
     </ThingDef>

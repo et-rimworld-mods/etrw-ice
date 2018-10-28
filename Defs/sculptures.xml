@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    <ThingDef ParentName="UnfinishedBase">
+        <defName>UnfinishedIceSculpture</defName>
+        <label>unfinished ice sculpture</label>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedSculpture</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <stuffCategories>
+            <li>IceBlocky</li>
+        </stuffCategories>
+        <comps>
+            <li>
+                <compClass>CompMelter</compClass>
+            </li>
+        </comps>
+    </ThingDef>
+
     <ThingDef Name="IceSculptureBase" ParentName="BuildingBase" Abstract="True">
         <thingClass>Building_Art</thingClass>
         <altitudeLayer>Building</altitudeLayer>
@@ -12,7 +29,7 @@
             <li>BuildingsArt</li>
         </thingCategories>
         <statBases>
-            <Flammability>0.0</Flammability>
+            <Flammability>1.0</Flammability>
             <SellPriceFactor>1.0</SellPriceFactor>
         </statBases>
         <comps>
@@ -34,22 +51,12 @@
         <recipeMaker>
             <workSpeedStat>SculptingSpeed</workSpeedStat>
             <workSkill>Artistic</workSkill>
-            <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+            <unfinishedThingDef>UnfinishedIceSculpture</unfinishedThingDef>
             <effectWorking>Sculpt</effectWorking>
             <soundWorking>Recipe_Sculpt</soundWorking>
             <recipeUsers>
                 <li>TableSculpting</li>
             </recipeUsers>
-            <!--<fixedIngredientFilter>-->
-                <!--<thingDefs>-->
-                    <!--<li>IceBlocks</li>-->
-                <!--</thingDefs>-->
-            <!--</fixedIngredientFilter>-->
-            <!--<defaultIngredientFilter>-->
-                <!--<thingDefs>-->
-                    <!--<li>IceBlocks</li>-->
-                <!--</thingDefs>-->
-            <!--</defaultIngredientFilter>-->
         </recipeMaker>
         <researchPrerequisites>
             <li>IceSculptureResearch</li>

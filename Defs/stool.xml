@@ -23,8 +23,8 @@
             <MaxHitPoints>15</MaxHitPoints>
             <WorkToBuild>450</WorkToBuild>
             <Mass>10</Mass>
-            <Flammability>0.0</Flammability>
-            <Beauty>0</Beauty>
+            <Flammability>1.0</Flammability>
+            <Beauty>15</Beauty>
             <Comfort>0.3</Comfort>
         </statBases>
         <socialPropernessMatters>true</socialPropernessMatters>
