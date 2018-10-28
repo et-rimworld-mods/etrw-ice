@@ -2,8 +2,6 @@
 <Defs>
     <ThingDef Name="IceWallBase" ParentName="BuildingBase" Abstract="True">
         <graphicData>
-            <graphicClass>Graphic_Appearances</graphicClass>
-            <texPath>Things/Building/Linked/Wall</texPath>
             <linkType>CornerFiller</linkType>
             <linkFlags>
                 <li>Wall</li>
@@ -66,6 +64,12 @@
         <label>ice wall</label>
         <description>A wall made of ice blocks.</description>
 
+        <graphicData>
+            <graphicClass>Graphic_Appearances</graphicClass>
+            <texPath>Things/Building/Linked/Wall</texPath>
+        </graphicData>
+        <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+
         <statBases>
             <Beauty>1</Beauty>
             <MaxHitPoints>100</MaxHitPoints>
@@ -87,6 +91,12 @@
         <defName>ChiseledIceWall</defName>
         <label>chiseled ice wall</label>
         <description>A wall made of ice blocks, chiseled to look like natural ice crystals. The chiseling makes it less durable in general, and more susceptible to explosives.</description>
+
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Building/Linked/Rock_Atlas</texPath>
+        </graphicData>
+        <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
 
         <statBases>
             <Beauty>15</Beauty>
