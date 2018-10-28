@@ -7,8 +7,8 @@
 
     <ResearchProjectDef>
         <defName>IceResearch</defName>
-        <label>ice</label>
-        <description>Figure out how to form ice into effective blocks, and cement them into useful forms.</description>
+        <label>ice forming</label>
+        <description>Cement ice pellets into useful forms.</description>
         <researchViewX>0</researchViewX>
         <researchViewY>0</researchViewY>
 
