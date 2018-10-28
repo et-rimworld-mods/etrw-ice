@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/BiomeDef[defName="IceSheet"]/description</xpath>
+        <value>
+            <description>Sheets of ice which can be kilometers thick, or thin enough for some rock and soil to be visible. There is very little soil for plants to grow in, and it is frozen most of the time anyways. The only animals here are migrating to somewhere else - or badly lost.</description>
+        </value>
+    </Operation>
+</Patch>
