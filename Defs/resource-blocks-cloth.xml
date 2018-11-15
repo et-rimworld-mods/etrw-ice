@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="IcyBlocksBase">
+        <defName>IcecreteBlocksCloth</defName>
+        <label>icecrete (cloth) blocks</label>
+        <description>Made from ice mixed with cloth fibres, these blocks are a more sturdy building material.</description>
+
+        <graphicData>
+            <color>(60, 100, 120)</color>
+        </graphicData>
+        <stuffProps>
+            <color>(60, 100, 120)</color>
+            <stuffAdjective>icecrete (cloth)</stuffAdjective>
+            <statFactors>
+                <MarketValue>1.2</MarketValue>
+                <Flammability>0.15</Flammability>
+                <Beauty>0.4</Beauty>
+                <MaxHitPoints>1.5</MaxHitPoints>
+                <WorkToBuild>1.5</WorkToBuild>
+                <WorkToMake>1.5</WorkToMake>
+            </statFactors>
+        </stuffProps>
+        <statBases>
+            <MaxHitPoints>75</MaxHitPoints>
+            <DeteriorationRate>5</DeteriorationRate>
+            <Flammability>0.15</Flammability>
+            <Mass>0.5</Mass>
+            <MarketValue>0.7</MarketValue>
+        </statBases>
+        <tradeability>Buyable</tradeability>
+    </ThingDef>
+
+    <RecipeDef ParentName="MakeIcyBlocksBase">
+        <defName>MakeIcecreteBlocksCloth</defName>
+        <label>make icecrete blocks (cloth)</label>
+        <description>Mix ice pellets with cloth fibres, to form strong icecrete blocks.</description>
+        <description>Make a batch of ice blocks.</description>
+        <jobString>Making ice blocks.</jobString>
+
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Cloth</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <IcecreteBlocksCloth>45</IcecreteBlocksCloth>
+        </products>
+        <targetCountAdjustment>45</targetCountAdjustment>
+        <workAmount>2300</workAmount>
+        <researchPrerequisite>IcecreteResearch</researchPrerequisite>
+    </RecipeDef>
+</Defs>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="IcyBlocksBase">
+        <defName>IcecreteBlocksHay</defName>
+        <label>icecrete (hay) blocks</label>
+        <description>Made from ice mixed with hay, these blocks are a fairly sturdy building material.</description>
+
+        <graphicData>
+            <color>(130, 230, 170)</color>
+        </graphicData>
+        <stuffProps>
+            <color>(130, 230, 170)</color>
+            <stuffAdjective>icecrete (hay)</stuffAdjective>
+            <statFactors>
+                <MarketValue>1.1</MarketValue>
+                <Flammability>0.1</Flammability>
+                <Beauty>0.3</Beauty>
+                <MaxHitPoints>2.0</MaxHitPoints>
+                <WorkToBuild>2.0</WorkToBuild>
+                <WorkToMake>2.0</WorkToMake>
+            </statFactors>
+        </stuffProps>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <DeteriorationRate>5</DeteriorationRate>
+            <Flammability>0.1</Flammability>
+            <Mass>0.6</Mass>
+            <MarketValue>0.8</MarketValue>
+        </statBases>
+        <tradeability>Buyable</tradeability>
+    </ThingDef>
+
+    <RecipeDef ParentName="MakeIcyBlocksBase">
+        <defName>MakeIcecreteBlocksHay</defName>
+        <label>make icecrete blocks (hay)</label>
+        <description>Make a batch of ice blocks.</description>
+        <jobString>Making hay-fibre icecrete blocks.</jobString>
+
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Hay</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Hay</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <IcecreteBlocksHay>40</IcecreteBlocksHay>
+        </products>
+        <targetCountAdjustment>40</targetCountAdjustment>
+        <workAmount>2200</workAmount>
+        <researchPrerequisite>IcecreteResearch</researchPrerequisite>
+    </RecipeDef>
+</Defs>

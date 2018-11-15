@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="ResourceBase">
+        <defName>IcePellets</defName>
+        <label>ice pellets</label>
+        <description>Small ice pellets that can be further processed into blocks.</description>
+
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+            <color>(160, 200, 220)</color>
+        </graphicData>
+        <uiIconForStackCount>75</uiIconForStackCount>
+
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MaxHitPoints>5</MaxHitPoints>
+            <DeteriorationRate>1</DeteriorationRate>
+            <Flammability>0</Flammability>
+            <Mass>0.0009</Mass>
+            <MarketValue>0.01</MarketValue>
+        </statBases>
+        <tradeability>None</tradeability>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <tickerType>Rare</tickerType>
+        <socialPropernessMatters>false</socialPropernessMatters>
+        <comps>
+            <li>
+                <compClass>CompMelter</compClass>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>IceMaker</defName>
+        <label>ice-maker</label>
+        <description>Slowly generates ice pellets, by freezing water.</description>
+
+        <graphicData>
+            <texPath>Things/Building/Special/InfiniteChemreactor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3, 3)</drawSize>
+            <shadowData>
+                <volume>(1.8, 1.0, 0.2)</volume>
+                <offset>(0.0, 0.0, -0.4)</offset>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <rotatable>false</rotatable>
+        <uiIconScale>0.8</uiIconScale>
+
+        <thingCategories>
+            <li>BuildingsSpecial</li>
+        </thingCategories>
+        <costList>
+            <Steel>50</Steel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>200</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Spawner">
+                <requiresPower>true</requiresPower>
+                <thingToSpawn>IcePellets</thingToSpawn>
+                <spawnCount>15</spawnCount>
+                <spawnIntervalRange>
+                    <!-- 100000 = 1.7 days in-game -->
+                    <min>50000</min>
+                    <max>70000</max>
+                </spawnIntervalRange>
+                <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>2</glowRadius>
+                <glowColor>(50,50,200,0)</glowColor>
+            </li>
+        </comps>
+        <designationCategory>Production</designationCategory>
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+        <statBases>
+            <Mass>100</Mass>
+            <Beauty>-10</Beauty>
+            <WorkToBuild>1500</WorkToBuild>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <size>(2, 2)</size>
+        <fillPercent>0.4</fillPercent> <!-- cover % in combat -->
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <passability>Impassable</passability>
+        <canOverlapZones>false</canOverlapZones>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <tradeability>None</tradeability>
+    </ThingDef>
+</Defs>
