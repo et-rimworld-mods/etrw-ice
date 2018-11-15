@@ -61,7 +61,7 @@
                         <li>IcePellets</li>
                     </thingDefs>
                 </filter>
-                <count>500</count>
+                <count>50</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -215,7 +215,7 @@
             <IceBlocks>35</IceBlocks>
         </products>
         <targetCountAdjustment>35</targetCountAdjustment>
-        <workAmount>3000</workAmount>
+        <workAmount>2000</workAmount>
         <researchPrerequisite>IceResearch</researchPrerequisite>
     </RecipeDef>
 
@@ -275,7 +275,7 @@
             <IcecreteBlocksWood>50</IcecreteBlocksWood>
         </products>
         <targetCountAdjustment>50</targetCountAdjustment>
-        <workAmount>3500</workAmount>
+        <workAmount>2500</workAmount>
         <researchPrerequisite>IcecreteResearch</researchPrerequisite>
     </RecipeDef>
 
@@ -327,14 +327,14 @@
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
-                <li>WoodLog</li>
+                <li>Hay</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
             <IcecreteBlocksHay>40</IcecreteBlocksHay>
         </products>
         <targetCountAdjustment>40</targetCountAdjustment>
-        <workAmount>3200</workAmount>
+        <workAmount>2200</workAmount>
         <researchPrerequisite>IcecreteResearch</researchPrerequisite>
     </RecipeDef>
 
@@ -393,7 +393,7 @@
             <IcecreteBlocksCloth>45</IcecreteBlocksCloth>
         </products>
         <targetCountAdjustment>45</targetCountAdjustment>
-        <workAmount>3300</workAmount>
+        <workAmount>2300</workAmount>
         <researchPrerequisite>IcecreteResearch</researchPrerequisite>
     </RecipeDef>
 </Defs>
