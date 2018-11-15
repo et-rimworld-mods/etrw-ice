@@ -141,7 +141,7 @@
             <li Class="CompProperties_Spawner">
                 <requiresPower>true</requiresPower>
                 <thingToSpawn>IcePellets</thingToSpawn>
-                <spawnCount>75</spawnCount>
+                <spawnCount>15</spawnCount>
                 <spawnIntervalRange>
                     <!-- 100000 = 1.7 days in-game -->
                     <min>50000</min>
