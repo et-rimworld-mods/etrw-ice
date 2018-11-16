@@ -34,7 +34,6 @@
         <defName>MakeIcecreteBlocksCloth</defName>
         <label>make icecrete blocks (cloth)</label>
         <description>Mix ice pellets with cloth fibres, to form strong icecrete blocks.</description>
-        <description>Make a batch of ice blocks.</description>
         <jobString>Making ice blocks.</jobString>
 
         <ingredients>
