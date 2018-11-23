@@ -36,10 +36,14 @@
         <fillPercent>0.20</fillPercent>
         <building>
             <isSittable>true</isSittable>
+            <expandHomeArea>false</expandHomeArea>
+            <repairable>false</repairable>
+            <isInert>true</isInert>
         </building>
         <researchPrerequisites>
             <li>IceResearch</li>
         </researchPrerequisites>
+        <tickerType>Rare</tickerType> <!-- needed for CompMelter https://ludeon.com/forums/index.php?topic=17322.msg188259#msg188259 -->
         <comps>
             <li>
                 <compClass>CompMelter</compClass>

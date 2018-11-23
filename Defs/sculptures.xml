@@ -10,6 +10,7 @@
         <stuffCategories>
             <li>IceBlocky</li>
         </stuffCategories>
+        <tickerType>Rare</tickerType> <!-- needed for CompMelter https://ludeon.com/forums/index.php?topic=17322.msg188259#msg188259 -->
         <comps>
             <li>
                 <compClass>CompMelter</compClass>
@@ -45,6 +46,12 @@
                 <compClass>CompMelter</compClass>
             </li>
         </comps>
+        <tickerType>Rare</tickerType> <!-- needed for CompMelter https://ludeon.com/forums/index.php?topic=17322.msg188259#msg188259 -->
+        <building>
+            <expandHomeArea>false</expandHomeArea>
+            <repairable>false</repairable>
+            <isInert>true</isInert>
+        </building>
         <inspectorTabs>
             <li>ITab_Art</li>
         </inspectorTabs>

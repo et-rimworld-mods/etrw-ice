@@ -30,7 +30,7 @@
         <fillPercent>1</fillPercent>
         <coversFloor>true</coversFloor>
         <placingDraggableDimensions>1</placingDraggableDimensions>
-        <tickerType>Never</tickerType>
+        <tickerType>Rare</tickerType>
         <rotatable>false</rotatable>
         <selectable>true</selectable>
         <neverMultiSelect>true</neverMultiSelect>
@@ -40,6 +40,7 @@
         <blockLight>true</blockLight>
         <canOverlapZones>false</canOverlapZones>
         <building>
+            <expandHomeArea>false</expandHomeArea>
             <repairable>false</repairable>
             <isInert>true</isInert>
             <ai_chillDestination>false</ai_chillDestination>
