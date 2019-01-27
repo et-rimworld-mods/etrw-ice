@@ -98,5 +98,8 @@
         <canOverlapZones>false</canOverlapZones>
         <minifiedDef>MinifiedThing</minifiedDef>
         <tradeability>None</tradeability>
+        <researchPrerequisites>
+            <li>AirConditioning</li>
+        </researchPrerequisites>
     </ThingDef>
 </Defs>
